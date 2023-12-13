@@ -25,7 +25,7 @@ public class Program {
             account = new Account(number,holder,initialDeposit); //inicializando constructor de 3 argumentos
         }
         else {
-            account = new Account(number,holder); // sobrecarga constructor 2 argumentos
+            account = new Account(number,holder); // sobrecarga constructor 2 argumentos, coloca 0 de saldo por padrão
         }
         System.out.println();
         System.out.println("Account data: ");
