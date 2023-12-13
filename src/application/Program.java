@@ -12,9 +12,9 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         Account account;
 
-        System.out.println("Enter account number: ");
+        System.out.println("Enter account number: "); // nº da conta
         int number = sc.nextInt();
-        System.out.println("Enter account holder: ");
+        System.out.println("Enter account holder: "); // Nome do titular
         sc.nextLine();
         String holder = sc.nextLine();
         System.out.println("Is there an initial deposit (y/n)? ");
@@ -22,10 +22,10 @@ public class Program {
         if (response == 'y') {
             System.out.println("Enter initial deposit value: ");
             double initialDeposit = sc.nextDouble();
-            account = new Account(number,holder,initialDeposit); // sobrecarga inicializando constructor de 3 argumentos
+            account = new Account(number,holder,initialDeposit); //inicializando constructor de 3 argumentos
         }
         else {
-            account = new Account(number,holder); // sobrecarga na pratica
+            account = new Account(number,holder); // sobrecarga constructor 2 argumentos
         }
         System.out.println();
         System.out.println("Account data: ");
